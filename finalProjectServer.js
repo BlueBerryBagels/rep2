@@ -2,7 +2,7 @@ const http = require('http');
 const path = require("path");
 const express = require("express");   
 const app = express();  
-const portNumber = 5000;
+const portNumber =  process.env.PORT || 3000;
 process.stdin.setEncoding("utf8"); 
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended:false}));
