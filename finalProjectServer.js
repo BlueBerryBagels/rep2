@@ -2,7 +2,7 @@ const http = require('http');
 const path = require("path");
 const express = require("express");   
 const app = express();  
-const portNumber =  process.env.PORT || 3000;
+const portNumber =  process.env.PORT || 3001;
 process.stdin.setEncoding("utf8"); 
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended:false}));
@@ -22,9 +22,11 @@ const uri = `mongodb+srv://${username}:${password}@cluster0.jylho.mongodb.net/?r
 
 const databaseAndCollection = {db: db, collection: collection};
 
-app.get("/", (request, response) => {
+/*app.get("/", (request, response) => {
 	response.render('index');
-});
+});*/
+app.get("/", (req, res) => res.type('html').send(html));
+
 app.get("/pageB",  (request, response) => {	
 	response.render('tempB'); 	
 }); 
