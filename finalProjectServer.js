@@ -25,7 +25,7 @@ const databaseAndCollection = {db: db, collection: collection};
 /*app.get("/", (request, response) => {
 	response.render('index');
 });*/
-app.get("/", (req, res) => res.type('html').send(html));
+app.get("/", (req, res) => res.type('html').send(index));
 
 app.get("/pageB",  (request, response) => {	
 	response.render('tempB'); 	
