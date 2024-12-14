@@ -122,7 +122,7 @@ app.post("/removeAll",async function(req,res){
 });
 
 
-app.listen(portNumber); 
+app.listen(3000); 
 /*
 console.log(`Web server is running at http://localhost:${portNumber}`);
 const prompt = "Type stop to shutdown the server: ";
