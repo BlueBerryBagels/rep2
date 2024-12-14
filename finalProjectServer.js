@@ -2,7 +2,7 @@ const http = require('http');
 const path = require("path");
 const express = require("express");   
 const app = express();  
-const portNumber =  process.env.PORT || 3001;
+const portNumber =  process.env.PORT || 3000;
 process.stdin.setEncoding("utf8"); 
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended:false}));
@@ -121,9 +121,9 @@ app.post("/removeAll",async function(req,res){
     }
 });
 
-/*
-app.listen(portNumber); 
 
+app.listen(portNumber); 
+/*
 console.log(`Web server is running at http://localhost:${portNumber}`);
 const prompt = "Type stop to shutdown the server: ";
 console.log(prompt);
