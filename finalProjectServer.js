@@ -119,7 +119,7 @@ app.post("/removeAll",async function(req,res){
     }
 });
 
-
+/*
 app.listen(portNumber); 
 console.log(`Web server is running at http://localhost:${portNumber}`);
 const prompt = "Type stop to shutdown the server: ";
@@ -136,4 +136,4 @@ process.stdin.on('readable', ()=>{
 		process.stdout.write(prompt);
 		process.stdin.resume();
     }
-});
+});*/
